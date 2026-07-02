@@ -265,6 +265,89 @@
         filter: blur(10px);
 
     }
+
+     @media (max-width:768px) {
+
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .envelope {
+            width: 320px;
+            height: 220px;
+            margin: auto;
+        }
+
+        .envelope-body {
+            width: 320px;
+            height: 190px;
+        }
+
+        .left-fold {
+            border-top: 95px solid transparent;
+            border-bottom: 95px solid transparent;
+            border-left: 160px solid #f39ac0;
+        }
+
+        .right-fold {
+            border-top: 95px solid transparent;
+            border-bottom: 95px solid transparent;
+            border-right: 160px solid #f39ac0;
+        }
+
+        .bottom-fold {
+            border-left: 160px solid transparent;
+            border-right: 160px solid transparent;
+            border-bottom: 105px solid #ffc4dc;
+        }
+
+        .top-flap {
+            top: 30px;
+            border-left: 160px solid transparent;
+            border-right: 160px solid transparent;
+            border-top: 110px solid #ff7aa8;
+        }
+
+        .seal {
+            width: 45px;
+            height: 45px;
+            font-size: 22px;
+            top: 75px;
+        }
+
+        .letter {
+            width: 260px;
+            height: 200px;
+            padding: 15px;
+        }
+
+        .letter h2 {
+            font-size: 22px;
+        }
+
+        .letter p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .letter.show {
+            transform: translateX(-50%) translateY(-140px);
+        }
+
+        .click-text {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .envelope::after {
+            width: 220px;
+        }
+
+    }
 </style>
 
 <body>
