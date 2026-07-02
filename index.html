@@ -52,6 +52,78 @@
         .btn {
             background-color: rgb(216, 91, 112);
         }
+         @media (max-width:768px) {
+
+            .container {
+                margin-top: 20px !important;
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .col-6 {
+                width: 100%;
+            }
+
+            img {
+                width: 80% !important;
+                display: block;
+                margin: 0 auto 20px;
+            }
+
+            .password {
+                height: 60px;
+                line-height: 60px;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .passwordbtns {
+                justify-content: space-between;
+            }
+
+            .passwordbtns button {
+                width: 31%;
+                padding: 18px 0;
+                font-size: 18px;
+                margin-bottom: 12px;
+                border-radius: 15px;
+            }
+
+            .deletebtn {
+                width: 31%;
+            }
+
+            .enterbtn {
+                margin-top: 10px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 15px;
+            }
+        }
+
+        @media (max-width:480px) {
+            img {
+                width: 90% !important;
+            }
+
+            .password {
+                font-size: 1.8rem;
+                height: 55px;
+                line-height: 55px;
+            }
+
+            .passwordbtns button {
+                padding: 15px 0;
+                font-size: 17px;
+            }
+
+            .enterbtn {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
