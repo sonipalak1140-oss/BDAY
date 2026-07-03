@@ -372,12 +372,11 @@
     <p>BLOW THIS CANDLE TO  </br>
     MAKE A WISH</p>
 </div>
- <audio id="birthdaySong">
-        <source src="happy-birthday.mp3" type="audio/mp3">
-    </audio>
+ 
 </body>
 
 <script>
+    let song = new Audio("happy-birthday.mp3")
      let candleContainer =document.querySelector('.candle-container');
         candleContainer.addEventListener('click',function(){
         window.location.href='page3.html'
@@ -385,6 +384,8 @@
      window.onload = function () {
         let song = document.getElementById("birthdaySong");
         song.play();
+         console.log("hbdy")
     }
+    
 </script>
 </html>
