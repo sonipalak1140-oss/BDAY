@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="page5.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:40px 0;
+     background-color: pink;
+}
+
+.container{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.card{
+
+    width:900px;
+    min-height:520px;
+
+    background:white;
+
+    border-radius:18px;
+
+    display:flex;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    animation:cardAppear 1s ease;
+}
+
+.left{
+
+    width:58%;
+
+    padding:55px;
+
+    background-color: rgb(255, 225, 230);
+}
+
+.left h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:48px;
+
+    color:#b11849;
+
+    margin-bottom:25px;
+}
+
+.left p{
+
+    font-size:16px;
+
+    line-height:30px;
+
+    color:#555;
+
+    margin-bottom:18px;
+}
+
+.left h3{
+
+    margin-top:30px;
+
+    color:#555;
+
+    font-weight:400;
+}
+
+.left h2{
+
+    font-family:'Dancing Script',cursive;
+
+    color:#b11849;
+
+    font-size:34px;
+
+    margin-top:8px;
+}
+
+button{
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#b11849;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 10px 20px rgba(177,24,73,.3);
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    background:#d11f5b;
+
+    box-shadow:0 15px 30px rgba(177,24,73,.5);
+}
+
+.right{
+
+    width:42%;
+
+    background:#f7f4f2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    background-color: rgb(253, 139, 158);
+}
+
+.photo{
+
+    width:190px;
+
+    background:white;
+
+    padding:12px 12px 40px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+    border-radius:5px;
+
+    transition:.5s;
+}
+
+.photo img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.photo1{
+
+    transform:rotate(-4deg);
+}
+
+.photo2{
+
+    transform:rotate(4deg);
+}
+
+.photo:hover{
+
+    transform:scale(1.08) rotate(0deg);
+}
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    body{
+
+        overflow-y:auto;
+
+        padding:25px 15px;
+
+    }
+
+    .container{
+
+        padding:0;
+
+    }
+
+    .card{
+
+        width:100%;
+
+        flex-direction:column;
+
+        min-height:auto;
+
+    }
+
+    .left{
+
+        width:100%;
+
+        padding:35px 25px;
+
+        order:2;
+
+        text-align:center;
+
+    }
+
+    .left h1{
+
+        font-size:40px;
+
+    }
+
+    .left p{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .left h2{
+
+        font-size:32px;
+
+    }
+
+    button{
+
+        width:100%;
+
+        margin-top:25px;
+
+    }
+
+    .right{
+
+        width:100%;
+
+        padding:35px 0;
+
+        gap:25px;
+
+        order:1;
+
+    }
+
+    .photo{
+
+        width:180px;
+
+    }
+
+    .photo img{
+
+        height:220px;
+
+    }
+
+    .photo1{
+
+        transform:rotate(-3deg);
+
+    }
+
+    .photo2{
+
+        transform:rotate(3deg);
+
+    }
+
+}
+#nextBtn{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- LEFT SIDE -->
+
+            <div class="left">
+
+                <h1>Happy Birthday!</h1>
+
+                <p>
+                    I hope this little digital surprise brings a smile to your face.
+                </p>
+
+                <p>
+                    You are one of the most amazing people I have ever met and I am
+                    really grateful to have you in my life.
+                </p>
+
+                <p>
+                    Thank you for every laugh, every memory and every beautiful
+                    moment we've shared together.
+                </p>
+
+                <p>
+                    Wishing you endless happiness, success and lots of cake today!
+                    🎂❤️
+                </p>
+
+                <h3>Love Always,</h3>
+
+                <h2>Palak ❤️</h2>
+
+                <button id="nextBtn">
+                    Next
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right">
+
+                <div class="photo photo1">
+                    <img src="cake.jfif">
+                </div>
+
+                <div class="photo photo2">
+                    <img src="cake.jfif">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="page5.js"></script>
+</body>
+<script>
+   // Select elements
+
+const card = document.querySelector(".card");
+const photos = document.querySelectorAll(".photo");
+const heading = document.querySelector(".left h1");
+const button = document.getElementById("nextBtn");
+
+// Initial State
+
+card.style.opacity = "0";
+card.style.transform = "translateY(50px)";
+
+photos.forEach(photo => {
+    photo.style.opacity = "0";
+    photo.style.transform = "translateX(120px)";
+});
+
+// Card Animation
+
+window.onload = function(){
+
+    card.style.transition = "1s";
+    card.style.opacity = "1";
+    card.style.transform = "translateY(0)";
+
+    // First Photo
+
+    setTimeout(() => {
+
+        photos[0].style.transition = "1s";
+        photos[0].style.opacity = "1";
+        photos[0].style.transform = "rotate(-4deg)";
+
+    },700);
+
+    // Second Photo
+
+    setTimeout(() => {
+
+        photos[1].style.transition = "1s";
+        photos[1].style.opacity = "1";
+        photos[1].style.transform = "rotate(4deg)";
+
+    },1200);
+};
+   let btn = document.querySelector('nextBtn');
+    nextBtn.addEventListener('click', function () {
+        window.location.href = 'page5.html';
+    });  
+</script>
+</html>
